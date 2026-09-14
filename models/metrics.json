@@ -1,0 +1,60 @@
+{
+  "need_model": {
+    "accuracy": 0.805,
+    "precision": 0.7913,
+    "recall": 0.7862,
+    "f1": 0.7887,
+    "roc_auc": 0.8859,
+    "rows": 5000,
+    "features": [
+      "days_since_transfusion",
+      "usual_interval_days",
+      "hb_level",
+      "recent_hb_drop",
+      "fatigue_score",
+      "prior_delay_count",
+      "infection_flag",
+      "appointment_adherence"
+    ]
+  },
+  "reachability_model": {
+    "accuracy": 0.661,
+    "precision": 0.687,
+    "recall": 0.7814,
+    "f1": 0.7312,
+    "roc_auc": 0.7099,
+    "rows": 5000,
+    "features": [
+      "days_since_last_contact",
+      "contacts_last_30d",
+      "response_rate_90d",
+      "avg_response_hours",
+      "distance_km",
+      "availability_rate_90d",
+      "weekday_availability",
+      "recent_donation_days",
+      "opt_in_active",
+      "night_contact_ratio"
+    ]
+  },
+  "burnout_model": {
+    "accuracy": 0.896,
+    "precision": 0.9071,
+    "recall": 0.9843,
+    "f1": 0.9441,
+    "roc_auc": 0.7879,
+    "rows": 5000,
+    "features": [
+      "contacts_last_14d",
+      "contacts_last_30d",
+      "successful_donations_90d",
+      "days_since_last_donation",
+      "response_rate_30d",
+      "decline_rate_30d",
+      "cooldown_days_observed",
+      "engagement_drop_pct",
+      "avg_response_hours",
+      "voluntary_opt_outs"
+    ]
+  }
+}
